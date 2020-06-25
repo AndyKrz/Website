@@ -1,19 +1,16 @@
-img.sppb-img-responsive {
- width:500px;
-}
 .large-header {
    position: relative;
    width: 100%;
-   background: #111;
+   background: rgb(170, 147, 147);
    overflow: hidden;
 /*    background-size: cover; */
    background-position: center center;
    z-index: 1;
 }
-
+/* 
 .demo .large-header {
    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-}
+} */
 
 .main-title {
    position: absolute;
@@ -21,7 +18,7 @@ img.sppb-img-responsive {
    padding: 0;
    color: #F9F1E9;
    text-align: center;
-   top: 50%;
+   top: 10%;
    left: 50%;
    -webkit-transform: translate3d(-50%, -50%, 0);
    transform: translate3d(-50%, -50%, 0);
@@ -32,7 +29,9 @@ img.sppb-img-responsive {
    font-size: 4.2em;
    letter-spacing: 0.1em;
 }
-
+h1.main-title.work-as {
+   margin-top: 250px;
+}
 .main-title .thin {
    font-weight: 200;
 }
@@ -41,4 +40,71 @@ img.sppb-img-responsive {
    .demo .main-title {
       font-size: 3em;
    }
+   img.sppb-img-responsive {
+      width: 300px;
+   }
+   h1.main-title.work-as {
+      margin-top: 400px;
+   }
 }
+div.post {
+   margin-top: 10px;
+}
+img.sppb-img-responsive {
+   display: block;
+   margin: 0 auto;
+}
+.curved{
+   background: rgb(222, 221, 226);
+   color: white;
+   text-align: center;
+}
+.curved svg{
+   display: block;
+}
+.curved h1 {
+   position: relative;
+   margin-right: 30rem;
+   font-size: 6rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-block-end: -2em;
+   margin-block-start: -.01rem;
+}
+.curved h2 {
+   margin-top: -300px;
+   font-size: 5rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+image.main-photo {
+   position: relative;
+}
+p.post.curved{
+   margin-top: 100px;
+   font-size: 4rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+canvas.middle {
+   background: rgb(81, 68, 141);
+   width: 100%;
+   height: 150px;
+   margin-bottom: -10px;
+}
+div.scrollmenu {
+   background-color: rgb(222, 221, 226);
+   overflow: auto;
+   white-space: nowrap;
+   text-align: end;
+ }
+ 
+ div.scrollmenu a {
+   display: inline-block;
+   color: rgb(170, 147, 147);
+   text-align: center;
+   padding: 14px;
+   text-decoration: none;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+ div.scrollmenu a:hover {
+   background-color: #777;
+ }
