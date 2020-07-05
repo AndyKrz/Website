@@ -62,24 +62,25 @@ img.sppb-img-responsive {
 .curved svg{
    display: block;
 }
-.curved h1 {
+/* .curved h1 {
    position: relative;
    margin-right: 30rem;
    font-size: 6rem;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    margin-block-end: -2em;
    margin-block-start: -.01rem;
-}
-.curved h2 {
+} */
+/* .curved h2 {
+   position: relative;
    margin-top: -300px;
    font-size: 5rem;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 image.main-photo {
    position: relative;
 }
 p.post.curved{
-   margin-top: 100px;
+   margin-top: 150px;7
    font-size: 4rem;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -88,6 +89,12 @@ canvas.middle {
    width: 100%;
    height: 150px;
    margin-bottom: -10px;
+}
+canvas.small {
+   background: rgb(81, 68, 141);
+   width: 100%;
+   height: 400px;
+
 }
 div.scrollmenu {
    background-color: rgb(222, 221, 226);
@@ -108,3 +115,68 @@ div.scrollmenu {
  div.scrollmenu a:hover {
    background-color: #777;
  }
+ nav.back{
+   background: rgb(81, 68, 141);
+   height: 400px;
+ }
+ img#java{
+    align-self: start;
+ }
+
+ .first-text {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 6rem;
+   left: 30rem;
+   position: absolute;
+   opacity: 1;
+   animation-name: topFadeOut;
+   animation-duration: 2s;
+   color: white;
+ }
+ @keyframes topFadeOut {
+   0% {
+     position: absolute;
+     top: 1rem;
+     opacity: 0;
+   }
+
+ 
+   75% {
+     position: absolute;
+     top: 5%;
+     opacity: 1;
+   }
+ 
+   100% {
+      position: absolute;
+     opacity: 1;
+     top:3rem;
+   }
+ }
+
+ .second-text {
+   position: relative;
+   opacity: 1;
+   color: #ccc;
+   margin-top: -300px;
+   font-size: 5rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+ .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(81, 68, 141), 0 0 20px rgb(81, 68, 141), 0 0 30px #2300e6, 0 0 40px #1700e6, 0 0 50px #0064e6, 0 0 60px #5800e6, 0 0 70px #0f00e6;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(81, 68, 141), 0 0 30px #4d50ff, 0 0 40px #084242, 0 0 50px #4df3ff, 0 0 60px #4dffd3, 0 0 70px #4df3ff, 0 0 80px #4dd5ff;
+  }
+}
