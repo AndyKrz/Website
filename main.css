@@ -130,20 +130,7 @@ img.sppb-img-responsive {
 .curved svg{
    display: block;
 }
-/* .curved h1 {
-   position: relative;
-   margin-right: 30rem;
-   font-size: 6rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   margin-block-end: -2em;
-   margin-block-start: -.01rem;
-} */
-/* .curved h2 {
-   position: relative;
-   margin-top: -300px;
-   font-size: 5rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} */
+
 image.main-photo {
    position: relative;
 }
@@ -274,14 +261,14 @@ text.descr {
 .css-typing {
 margin-left: 32rem;
 border-style: solid;
-background:  rgb(222, 221, 226);
+background-image: linear-gradient(193deg, #313960 20%, #202961 100%);
+box-shadow: 0 0 0 0 #ffffff;
 margin-right: 2rem;
 width: 150px;
 }
 .css-typing2 {
    border-style: solid;
-   background: rgb(222, 221, 226);
-   border-block-end: initial;
+   background-image: linear-gradient(193deg, #313960 20%, #202961 100%);
    width: 150px;
    }
 .css-typing p {
@@ -615,5 +602,9 @@ img#dog {
   transform-style: preserve-3d;
   filter: blur(0px);
   opacity: 1;
-  transform: perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+   rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+a.red {
+  color:red;
 }
