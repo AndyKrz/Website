@@ -1,12 +1,47 @@
+#Page1{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: gray;
+  color: white;
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+#Page1.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+.credit {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.credit a {
+  color: #FDB515;
+  font: 800 75% "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
 
 img.main-photo{
-    margin-top: -24rem;
+  z-index: 1;
+  position: relative;
+    margin-top: -44rem;
 }
 div.rest {
   background: rgb(81, 68, 141);
+  
 }
 
 .large-header {
@@ -48,6 +83,22 @@ h1.main-title.work-as {
 }
 
 @media only screen and (max-width: 768px) {
+h3 {
+    font-size: .5rem !important;
+
+}
+
+div.flip-box {
+  max-width:100%;
+  max-height:100%;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+
+
   .scrollmenu.content a{
     font-size: 0.6rem;
 }
@@ -82,7 +133,7 @@ h1.main-title.work-as {
    }
    div.css-typing {
     margin: auto;
-    margin-top: -10px;
+    margin-top: -80px;
     width: fit-content;
     margin-left: -25px;
    }
@@ -90,7 +141,7 @@ h1.main-title.work-as {
     margin: auto;
     width: fit-content;
     margin-left: 8px;
-    margin-top: 20px;
+    margin-top: -60px;
   }
   div.projects{
     display: inline;
@@ -100,23 +151,29 @@ h1.main-title.work-as {
     }
   img#kolko {
     margin: auto;
-    width: 141px;
-    height: 205px;
+    width: 75px;
+    height: 120px;
 }
 img#dog {
-  width: 150px;
-    height: 300px;
+  width: 75px;
+    height: 150px;
+    border-radius: 1rem !important;
+}
+img#tennis {
+  width: 75px;
+    height: 150px;
     border-radius: 1rem !important;
 }
 nav.back {
-  display: grid !important;
+  display: flex !important;
 }
 p.post.curved {
   font-size: 1rem !important;
   margin-top: 40px !important;
 }
 .first-text{
-  left:3rem !important;
+  top: 4rem !important;
+  left:8rem !important;
   font-size: 1.7rem !important; 
 }
 .css-typing p { 
@@ -135,9 +192,10 @@ h2.contact {
   font-size: 2rem !important;
 }
 img.main-photo {
+  margin-left: 1rem;
   width: 150px;
   height: 200px;
-  margin-top: -110px
+  margin-top: -200px
 }
 
 }
@@ -149,7 +207,7 @@ img.sppb-img-responsive {
    margin: 0 auto;
 }
 .curved{
-   background: rgb(222, 221, 226);
+   background: rgb(82, 70, 133);
    color: white;
    text-align: center;
 }
@@ -160,54 +218,57 @@ img.sppb-img-responsive {
 image.main-photo {
    position: relative;
 }
-p.post.curved{
-   margin-top: 150px;
-   font-size: 4rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h2.post.curved{
+   margin-top: 50px;
+   font-size: 5rem;
+   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+   Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 canvas.middle {
-   background: rgb(81, 68, 141);
+   /* background: rgb(81, 68, 141); */
+   background: rgb(82,70,133);
+   background: linear-gradient(180deg, rgba(82,70,133,1) 17%, rgba(123,123,198,1) 52%, rgba(81,68,141,1) 100%);
    width: 100%;
    height: 150px;
    margin-bottom: -10px;
 }
 canvas.small {
-   background: rgb(81, 68, 141);
+   background: rgb(82, 70, 133);
    width: 100%;
    height: 400px;
 
 }
 div.scrollmenu {
-   background-color: rgb(222, 221, 226);
+   background-color: white;
    overflow: auto;
    white-space: nowrap;
    text-align: end;
  }
  
  div.scrollmenu a {
+   font-size: 1.5rem;
+   word-spacing: 20%;
    display: inline-block;
-   color: rgb(170, 147, 147);
+   color: grey;
    text-align: center;
-   padding: 14px;
+   padding: 10px 40px;
    text-decoration: none;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+   Helvetica, Arial, "Lucida Grande", sans-serif;
  }
  
  div.scrollmenu a:hover {
-   background-color: #777;
+   background-color: #04e8b9;
  }
  nav.back{
-   background: rgb(81, 68, 141);
-   height: 700px;
-   display: -webkit-box;
-
+   background: rgb(82,70,133);
+   display: inline-flex;
  }
  nav.back2{
-  background: rgb(81, 68, 141);
-
+  background: rgb(82, 70, 133);
 }
 .color{
-  background: rgb(81, 68, 141);
+  background: rgb(82, 70, 133);
   margin-block-end: -0.2rem;
   margin-block-start: -.2rem;
 }
@@ -216,9 +277,11 @@ div.scrollmenu {
  }
 
  .first-text {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: 6rem;
-   left: 22rem;
+   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+   Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size: 5rem;
+   top: 17rem;
+   left: 17rem;
    position: absolute;
    opacity: 1;
    color: white;
@@ -228,7 +291,8 @@ div.scrollmenu {
    opacity: 1;
    color: #ccc;
    font-size: 5rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+   Helvetica, Arial, "Lucida Grande", sans-serif;
    text-align: center;
  }
 
@@ -255,8 +319,7 @@ h3 {
    margin-block-start: 0em;
    margin-block-end: 0em;
    font-size: 2rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 text.descr {
@@ -271,41 +334,48 @@ text.descr {
 }
 
 .css-typing {
-margin-left:30rem;
-border-style: solid;
-background-image: linear-gradient(193deg, #313960 20%, #202961 100%);
+margin-left:18rem;
+background: rgb(82,70,133);
 box-shadow: 0 0 0 0 #ffffff;
 margin-right: 2rem;
-width: 150px;
+width: 230px;
 margin-block-end: auto;
+margin-top:-16rem;
+z-index: 1;
+position: relative;
+padding: 10px;
+
 }
 .css-typing2 {
-   border-style: solid;
-   background-image: linear-gradient(193deg, #313960 20%, #202961 100%);
-   width: 150px;
+  background: linear-gradient(180deg, rgba(60,60,138,0.9676821412158614) 0%, rgba(98,68,144,1) 11%, rgba(72,59,135,1) 54%);
+  width: 230px;
    margin-block-end: auto;
    margin-right: 5rem;
-   margin-top: 5rem;
+   margin-top: -12.2rem;
+z-index: 1;
+position: relative;
+padding: 10px;
    }
 .css-typing p {
    border-right: .15em solid orange;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 14px;
    white-space: nowrap;
    overflow: hidden;
  }
  .css-typing p:nth-child(1) {
-   width: 10.3em;
-   -webkit-animation: type 1.5s steps(40, end);
-   animation: type 1.5s steps(40, end);
+   width: 10em;
+   -webkit-animation: type 1.5s steps(25, end);
+   animation: type 1.5s steps(25, end);
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
  .css-typing p:nth-child(2) {
    width: 4em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(15, end);
+   animation: type2 1.5s steps(15, end);
    -webkit-animation-delay: 1.5s;
    animation-delay: 1.5s;
    -webkit-animation-fill-mode: forwards;
@@ -314,8 +384,8 @@ margin-block-end: auto;
  .css-typing p:nth-child(3) {
    width: 8em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(20, end);
+   animation: type2 1.5s steps(20, end);
    -webkit-animation-delay: 3s;
    animation-delay: 3s;
    -webkit-animation-fill-mode: forwards;
@@ -324,8 +394,8 @@ margin-block-end: auto;
  .css-typing p:nth-child(4) {
    width: 10em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(20, end);
+   animation: type2 1.5s steps(20, end);
    -webkit-animation-delay: 4.5s;
    animation-delay: 4.5s;
    -webkit-animation-fill-mode: forwards;
@@ -334,8 +404,8 @@ margin-block-end: auto;
  .css-typing p:nth-child(5) {
    width: .5em;
    opacity: 0;
-   -webkit-animation: type3 1s steps(40, end), blink .5s step-end infinite alternate;
-   animation: type3 1s steps(40, end), blink .5s step-end infinite alternate;
+   -webkit-animation: type3 .1s steps(5, end), blink .5s step-end infinite alternate;
+   animation: type3 .1s steps(5, end), blink .5s step-end infinite alternate;
    -webkit-animation-delay: 6s;
    animation-delay: 6s;
    -webkit-animation-fill-mode: forwards;
@@ -434,46 +504,46 @@ margin-block-end: auto;
  }
  .css-typing2 p {
    border-right: .15em solid orange;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 14px;
    white-space: nowrap;
    overflow: hidden;
  }
  .css-typing2 p:nth-child(1) {
    opacity: 0;
-   width: 5.3em;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   width: 5.7em;
+   -webkit-animation: type2 1.2s steps(20, end);
+   animation: type2 1.2s steps(20, end);
    -webkit-animation-delay: 7.5s;
    animation-delay: 7.5s;
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
  .css-typing2 p:nth-child(2) {
-   width: 9.5em;
+   width: 10.5em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(20, end);
+   animation: type2 1.5s steps(20, end);
    -webkit-animation-delay: 9s;
    animation-delay: 9s;
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
  .css-typing2 p:nth-child(3) {
-   width: 6.5em;
+   width: 7em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(20, end);
+   animation: type2 1.5s steps(20, end);
    -webkit-animation-delay: 10.5s;
    animation-delay: 10.5s;
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
  .css-typing2 p:nth-child(4) {
-   width: 5.5em;
+   width: 5.7em;
    opacity: 0;
-   -webkit-animation: type2 1.5s steps(40, end);
-   animation: type2 1.5s steps(40, end);
+   -webkit-animation: type2 1.5s steps(20, end);
+   animation: type2 1.5s steps(20, end);
    -webkit-animation-delay: 12s;
    animation-delay: 12s;
    -webkit-animation-fill-mode: forwards;
@@ -482,8 +552,8 @@ margin-block-end: auto;
  .css-typing2 p:nth-child(5) {
    width: .5em;
    opacity: 0;
-   -webkit-animation: type3 .5s steps(40, end), blink .5s step-end infinite alternate;
-   animation: type3 .5s steps(40, end), blink .5s step-end infinite alternate;
+   -webkit-animation: type3 .5s steps(15, end), blink .5s step-end infinite alternate;
+   animation: type3 .5s steps(15, end), blink .5s step-end infinite alternate;
    -webkit-animation-delay: 13.5s;
    animation-delay: 13.5s;
    -webkit-animation-fill-mode: forwards;
@@ -583,13 +653,17 @@ margin-block-end: auto;
  .typing {
    display: -webkit-box;
    padding: 2rem;
-   background: rgb(81, 68, 141);
+   background: rgb(82,70,133);
+/* background: linear-gradient(180deg, rgba(82,70,133,1) 17%, rgba(123,123,198,1) 52%, rgba(81,68,141,1) 100%); */
+   /* background: rgb(81, 68, 141); */
    text-align: start;
  }
 
  h2.techno {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+   Helvetica, Arial, "Lucida Grande", sans-serif;
    font-size: 5rem;
+   margin: 25px;
 }
 /* .icon {
    box-shadow: 5px 5px 5px 1px rgba(255,255,255, .9);
@@ -603,14 +677,16 @@ transition: all 0.25s ease-in-out;
 }
 
 h2.contact { 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background:rgb(82, 70, 133);
+  margin-top: -1rem;
+  font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 5rem;
   text-align: center;
-  margin: auto;
-    margin-top: 0;
+  margin-bottom: -.3rem;
 }
 img#dog {
-  border-radius: 3rem;
+  border-radius: 2.3rem;
   will-change: transform;
   transition-timing-function: ease;
   transition-duration: 0s;
@@ -618,8 +694,17 @@ img#dog {
   transform-style: preserve-3d;
   filter: blur(0px);
   opacity: 1;
-  transform: perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-   rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+   will-change: transform;
+}
+img#dog:hover {
+  webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+img#tennis {
+  border-radius: 2.5rem;
+}
+#tennis:hover {
+content: url(balls.jpg);
 }
 a.red {
   color:red;
@@ -678,7 +763,8 @@ text.green {
   }
 }
 .bounce-top {
-	animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+  z-index: 2;
 }
 @keyframes bounce-top {
   0% {
@@ -770,4 +856,126 @@ text.green {
   90% {
     transform: rotate(2deg);
   }
+}
+
+.wave-container {
+  background: white;
+  z-index: 1;
+  position: relative;
+}
+.wave-container > svg {
+  display: block;
+  height: 700px;
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+.wave-container > svg {
+  /* display: block; */
+  transform-origin: bottom;
+  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+svg.colour_back {
+  background: rgb(82, 70, 133);
+}
+h3.end {
+  background:rgb(82, 70, 133);
+}
+
+
+@import "compass/css3";
+
+* {
+  @include box-sizing(border-box); 
+}
+.module {
+  width: 48%;
+  min-height: 200px;
+  background: white;
+  position: relative;
+  float: left;
+  padding: 20px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  box-shadow: 0 1px 3px rgba(black, 0.2);
+}
+.come-in {
+  transform: translateX(550px);
+  animation: come-in 2.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.9s;
+}
+.already-visible {
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateX(0); }
+}
+
+hr.rounded {
+  border-top: 3px solid #04e8b9;
+  border-radius: 2px;
+  margin-top: -2.2rem;
+  
+}
+
+
+
+.flip-box {
+  margin: 0px 40px;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color:transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

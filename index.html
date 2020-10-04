@@ -7,37 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link href="main.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
-</head>
-<body>     <!-- check the Comments for more info -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- check the Comments for more info -->
 <div class="container demo">
    <div class="content">
       <div id="large-header" class="large-header">
         <nav id="sidenav">
         <div class="scrollmenu content">
-          <a href="#portfolio" >Portfolio</a>
           <a href="#technologies">Technologies</a>
+          <a href="#portfolio" >Portfolio</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
-        <div class="curved">
+        <div class="curved ">
           <h1 class="first-text bounce-top"><a class="green">Hello.</a><br> I'm Andrew.</h1>
           <!-- <svg viewBox="0 0 1440 1318"><path fill="rgb(81, 68, 141)" fill-opacity="1" d="M0,0L40,26.7C80,53,160,107,240,117.3C320,128,400,96,480,74.7C560,53,640,43,720,74.7C800,107,880,181,960,181.3C1040,181,1120,107,1200,64C1280,21,1360,11,1400,5.3L1440,0L1440,1320L1400,1320C1360,1320,1280,1320,1200,1320C1120,1320,1040,1320,960,1320C880,1320,800,1320,720,1320C640,1320,560,1320,480,1320C400,1320,1320,1320,240,1320C160,1320,80,1320,40,1320L0,1320Z"></path>
 
             <image class="main-photo" x="875" y="-190" width="525" height="1050" xlink:href="Endrju.png"></image>
         </svg> -->
-        <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">
-          <path fill="rgb(81, 68, 141)" fill-opacity="1" d="M0,288L80,240C160,192,320,96,480,80C640,64,800,128,960,176C1120,224,1280,256,1360,272L1440,288L1440,320L360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-
-          </path>
-
-          <!-- <image class="main-photo" x="875" y="-190" width="525" height="1050" xlink:href="Endrju.png"></image> -->
+        <div class="wave-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650">
+          <!-- <path fill="rgb(82,70,133)" fill-opacity="1" d="M0,288L80,240C160,192,320,96,480,80C640,64,800,128,960,176C1120,224,1280,256,1360,272L1440,288L1440,320L360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"> -->
+            <!-- <path fill="rgb(81, 68, 141)" fill-opacity="1" d="M-2.14,129.56 C151.35,135.49 272.12,-120.09 364.10,89.10 L378.78,151.28 L0.00,150.00 Z"> -->
+              M 0 320 Q 20 300 40 280 Q 240 60 440 280 Q 1640 500 800 500 L 0 500 L 0 320
+             <path fill="rgb(82,70,133)" fill-opacity="1" d="M 0 500 Q 25 500 100 425 Q 450 25 775 425 Q 1125 800 1500 800 L 0 800 L 0 500"></path>
+          <!-- </path> -->
         </svg>
         </div>
           <div class="typing">
-
-          <div class="css-typing">
+          <div data-aos="fade-right" class="css-typing">
             <p>
               // Myself introduction
             </p>
@@ -48,22 +50,25 @@
                First name: <a class="green">Andy</a>;
               </p>
               <p>
-                 Last name: <a class="green"> Flintstone </a> ;
+                 Last name: <a class="green"> Flintstone</a>;
               </p>
               <p>
              }
             </p>
           </div>
-          <div class="css-typing2">
+          <div data-aos="fade-left" class="css-typing2">
               <p> .What I Do { </p>
-                <p> Profession:<a class="green">Developer;</a></p>
+                <p> Profession: <a class="green">Developer;</a></p>
                 <p>Markup: <a class="green">HTML</a>;</p>
                 <p> Expert: <a class="green">Java</a>;</p>
                 <p> }</p>
 
           </div>
-          <img class="main-photo" x="875" y="-1900" width="550" height="700" src="Endrju.png">
+          <img class="main-photo" x="875" y="-1900" width="550" height="700" src="endrju_2.png">
 
+        </div>
+        <div>
+          <hr class="rounded">
         </div>
 
           <!-- <svg  viewBox="0 0 1440 319">
@@ -74,11 +79,111 @@
           </svg>         -->
           <!-- <div class="rest"> -->
             <nav class="back2">
-          <h2 class="second-text color glow col-6 text-focus-in">I work as a Java Developer</h2>
+
+          <!-- <h2 class="second-text color glow text-focus-in">I work as a Java Developer</h2> -->
+          <nav class="middle">
+
+            <section id="technologies" class="anchor">
+            <div>
+              <h2 class="techno color vibrate-1">Technologies</h2>
+
+            </div>            
+          </section>
+          </nav>
+          <div class="mytechno">
+            <nav>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="java-icon icon" x="100" y="0" width="100" height="100" src="java.png"></image>
+          </div>
+          <div class="flip-box-back">
+            <h4>Java</h4>
+            </div>
+          </div>
+          </div>
+          <div class="flip-box ">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="android-icon icon" x="300" y="0" width="100" height="100" src="android.png"></image>
+          </div>
+          <div class="flip-box-back">
+            <h4>Android</h4>
+            </div>
+          </div>
+          </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="spring-icon icon" x="500" y="0" width="100" height="100" src="spring.png"></image>
+        </div>
+        <div class="flip-box-back">
+          <h4>Spring</h4>
+          </div>
+        </div>
+        </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="git-icon icon" x="700" y="0" width="100" height="100" src="git.png"></image>
+        </div>
+        <div class="flip-box-back">
+          <h4>Git</h4>
+          </div>
+        </div>
+        </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="html-icon icon" x="900" y="0" width="100" height="100" src="html.png"></image>
+        </div>
+        <div class="flip-box-back">
+          <h4>HTML</h4>
+          </div>
+        </div>
+        </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="hibernate-icon icon" x="1100" y="0" width="100" height="100" src="hibernate.png"></image>
+        </div>
+        <div class="flip-box-back">
+          <h4>Hibernate</h4>
+          </div>
+        </div>
+        </div>
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+          <image class="angular-icon icon" x="1300" y="0" width="100" height="100" src="angular.png"></image>
+        </div>
+        <div class="flip-box-back">
+          <h4>Angular</h4>
+          </div>
+        </div>
+        </div>
+      </nav>
+      </div>
+          <!-- <div class="back">
+          <svg class="colour_back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 175">
+            <path fill="rgb(81, 68, 141)" fill-opacity="5" ></path>
+            d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181xlink:href="java.png",576,186.7C672,192,768,224,864,208C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            <image class="java-icon icon" x="100" y="0" width="100" height="200" xlink:href="java.png"></image>
+            <image class="android-icon icon" x="300" y="0" width="100" height="200" xlink:href="android.png"></image>
+            <image class="spring-icon icon" x="500" y="0" width="100" height="200" xlink:href="spring.png"></image>
+            <image class="git-icon icon" x="700" y="0" width="100" height="200" xlink:href="git.png"></image>
+            <image class="html-icon icon" x="900" y="0" width="100" height="200" xlink:href="html.png"></image>
+            <image class="hibernate-icon icon" x="1100" y="0" width="100" height="200" xlink:href="hibernate.png"></image>
+            <image class="angular-icon icon" x="1300" y="0" width="100" height="200" xlink:href="angular.png"></image>
+             </svg>  
+          </div>           -->
+
+
+
           <section id="portfolio" class="anchor">
   
         
-            <p class="post color curved vibrate-1">This is my portfolio </p>
+            <h2 class="post color curved vibrate-1">Recent Works</h2>
           </section>
         </nav>
         <!-- </div> -->
@@ -88,44 +193,36 @@
 
             </svg> -->
             <nav class="back">
-              <div class="projects">
-              <h3 class="descr">Kolko i krzyżyk</h3>
+              <div data-aos="fade-right" class="projects">
+              <h3 class="descr">Kółko i krzyżyk</h3>
+              <a href="https://github.com/AndyKrz/Andy" target="_blank">
               <img id='kolko' width="283" height="411" src="Kolko.jpg" alt="Kolko_i_krzyzyk" >
+            </a>
+
             </div>
-            <div class="projects">
+            <div data-aos="zoom-in-up" class="projects">
               <h3 class="descr">Dog4U App</h3>
+              <a href="https://github.com/AndyKrz/Andy" target="_blank">
               <img id='dog' width="300" height="600" src="Dog.jpg" alt="Dog4U" >
+              </a>
+            </div>
+             <div data-aos="fade-left" class="projects">
+              <h3 class="descr">TennisBall App</h3>
+              <a href="https://github.com/AndyKrz/Andy" target="_blank">
+              <img id='tennis' width="300" height="600" src="Tennis.jpg" alt="Tennis" >
+              </a>
             </div>
             </nav>
-            <nav class="middle">
-              <section id="technologies" class="anchor">
-              <div>
-              
-                <h2 class="techno color vibrate-1">Technologies</h2>
-              </div>            
-            </section>
-            </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-              <path fill="rgb(81, 68, 141)" fill-opacity="1" 
-              d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,186.7C672,192,768,224,864,208C960,192,1056,128,1152,106.7C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-              <image class="java-icon icon" x="100" y="-140" width="100" height="600" xlink:href="java.png"></image>
-              <image class="android-icon icon" x="300" y="-140" width="100" height="600" xlink:href="android.jpg"></image>
-              <image class="spring-icon icon" x="500" y="-140" width="100" height="600" xlink:href="spring.png"></image>
-              <image class="git-icon icon" x="700" y="-140" width="100" height="600" xlink:href="git.png"></image>
-              <image class="html-icon icon" x="900" y="-140" width="100" height="600" xlink:href="html.png"></image>
-              <image class="hibernate-icon icon" x="1100" y="-140" width="100" height="600" xlink:href="hibernate.jpg"></image>
-              <image class="angular-icon icon" x="1300" y="-140" width="100" height="600" xlink:href="angular.png"></image>
-              
-            </svg>  
             <div class="middle">
               <section id="contact" class="anchor">
+
               <div>
               <h2 class="contact vibrate-1">Contact</h2>
             </div>
           </section>
               <div>
-                <h3 class="descr">Andrzej Krzemień
-                  email: andy.krzemien@gmail.com
+                <h3 class="descr end">Andrzej Krzemień<br>
+                  email: andy.krzemien@gmail.com<br>
                   tel: 506569744
                 </h3>
               </div>
@@ -134,8 +231,8 @@
       </div>
    </div>
 </div>
-
 </body>
+
 <script>
   window.onload = function() {
       var canvas = document.getElementById("myCanvas");
@@ -144,9 +241,38 @@
      ctx.drawImage(img, 10, 10);
   };
   </script>
+  <script>
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('#loading').fadeOut('slow', function () {
+              document.getElementById('#loading').visible = false;
+            });
+        },2000); // set the time here
+    });  
+});
+  </script>
+  <script>
+    document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("container").style.visibility = "none"; 
+        document.querySelector("#loading").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loading").style.display = "hidden"; 
+        document.querySelector("container").style.visibility = "visible"; 
+    } 
+}; 
+  </script>
+  
         <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
     </script>    
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="js/tools.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+      
+
 </html>
 
