@@ -220,6 +220,7 @@ image.main-photo {
 }
 h2.post.curved{
    margin-top: 50px;
+   margin-bottom: 50px;
    font-size: 5rem;
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -279,9 +280,9 @@ div.scrollmenu {
  .first-text {
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-size: 5rem;
-   top: 17rem;
-   left: 17rem;
+   font-size: 6rem;
+   top: 7rem;
+   left: 15rem;
    position: absolute;
    opacity: 1;
    color: white;
@@ -663,7 +664,7 @@ padding: 10px;
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
    font-size: 5rem;
-   margin: 25px;
+   margin: 75px;
 }
 /* .icon {
    box-shadow: 5px 5px 5px 1px rgba(255,255,255, .9);
@@ -678,12 +679,10 @@ transition: all 0.25s ease-in-out;
 
 h2.contact { 
   background:rgb(82, 70, 133);
-  margin-top: -1rem;
   font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 5rem;
   text-align: center;
-  margin-bottom: -.3rem;
 }
 img#dog {
   border-radius: 2.3rem;
@@ -865,7 +864,7 @@ text.green {
 }
 .wave-container > svg {
   display: block;
-  height: 700px;
+
 }
 
 @keyframes animateWave {
@@ -978,4 +977,7 @@ hr.rounded {
 }
 h4 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h3.descr {
+  margin-bottom: 1rem;
 }
