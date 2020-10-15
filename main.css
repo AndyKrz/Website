@@ -28,10 +28,10 @@
   text-decoration: none;
 }
 
-
-
 html {
   scroll-behavior: smooth;
+  margin-right: -10px;
+  margin-top: -75px;
 }
 
 img.main-photo{
@@ -164,7 +164,7 @@ img#tennis {
     height: 150px;
     border-radius: 1rem !important;
 }
-nav.back {
+nav.back3 {
   display: flex !important;
 }
 p.post.curved {
@@ -207,20 +207,27 @@ img.sppb-img-responsive {
    margin: 0 auto;
 }
 .curved{
-   background: rgb(82, 70, 133);
+   background: #50266f;
    color: white;
    text-align: center;
 }
 .curved svg{
    display: block;
 }
-
+.curved2{
+  background: white;
+  color: white;
+  text-align: center;
+}
+.curved2 svg{
+  display: block;
+}
 image.main-photo {
    position: relative;
 }
 h2.post.curved{
    margin-top: 50px;
-   margin-bottom: 50px;
+   /* margin-bottom: 50px; */
    font-size: 5rem;
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -261,15 +268,15 @@ div.scrollmenu {
  div.scrollmenu a:hover {
    background-color: #04e8b9;
  }
- nav.back{
-   background: rgb(82,70,133);
-   display: inline-flex;
+ nav.back3{
+   background: #50266f;
+   /* display: flex; */
  }
  nav.back2{
-  background: rgb(82, 70, 133);
+  background: #50266f;
 }
 .color{
-  background: rgb(82, 70, 133);
+  background: #50266f;
   margin-block-end: -0.2rem;
   margin-block-start: -.2rem;
 }
@@ -282,7 +289,7 @@ div.scrollmenu {
    Helvetica, Arial, "Lucida Grande", sans-serif;
    font-size: 6rem;
    top: 7rem;
-   left: 15rem;
+   left: 25rem;
    position: absolute;
    opacity: 1;
    color: white;
@@ -335,24 +342,23 @@ text.descr {
 }
 
 .css-typing {
-margin-left:18rem;
-background: rgb(82,70,133);
+margin-left:10rem;
+background: #50266f;
 box-shadow: 0 0 0 0 #ffffff;
 margin-right: 2rem;
 width: 230px;
 margin-block-end: auto;
-margin-top:-16rem;
+margin-top:-20rem;
 z-index: 1;
 position: relative;
 padding: 10px;
 
 }
 .css-typing2 {
-  background: linear-gradient(180deg, rgba(60,60,138,0.9676821412158614) 0%, rgba(98,68,144,1) 11%, rgba(72,59,135,1) 54%);
-  width: 230px;
-   margin-block-end: auto;
+  background:#50266f;
+  margin-block-end: auto;
    margin-right: 5rem;
-   margin-top: -12.2rem;
+   margin-top: -17.5rem;
 z-index: 1;
 position: relative;
 padding: 10px;
@@ -560,6 +566,17 @@ padding: 10px;
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
+ .css-typing2 h1 {
+  margin-left: 25rem;
+  width: 13em;
+  opacity: 0;
+  -webkit-animation: type4;
+  animation: type4;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
  
  @keyframes type {
    0% {
@@ -639,8 +656,37 @@ padding: 10px;
    100% {
      opacity: 1;
    }
+   
  }
  
+ @keyframes type4 {
+  0% {
+    width: 13em;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type4 {
+  0% {
+    width: 13em;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+
+
+
  @keyframes blink {
    50% {
      border-color: transparent;
@@ -653,8 +699,8 @@ padding: 10px;
  }
  .typing {
    display: -webkit-box;
-   padding: 2rem;
-   background: rgb(82,70,133);
+   /* padding: 2rem; */
+   background:#50266f;
 /* background: linear-gradient(180deg, rgba(82,70,133,1) 17%, rgba(123,123,198,1) 52%, rgba(81,68,141,1) 100%); */
    /* background: rgb(81, 68, 141); */
    text-align: start;
@@ -677,8 +723,11 @@ padding: 10px;
 transition: all 0.25s ease-in-out;
 }
 
+
 h2.contact { 
-  background:rgb(82, 70, 133);
+/* margin top setted */
+  margin-top: 0px;
+  background:#50266f;
   font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 5rem;
@@ -881,10 +930,10 @@ text.green {
   animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 svg.colour_back {
-  background: rgb(82, 70, 133);
+  background: #50266f;
 }
 h3.end {
-  background:rgb(82, 70, 133);
+  background:#50266f;
 }
 
 
@@ -923,7 +972,8 @@ h3.end {
 hr.rounded {
   border-top: 3px solid #04e8b9;
   border-radius: 2px;
-  margin-top: -2.2rem;
+  margin-top: 0rem;
+  border: double;
   
 }
 
@@ -969,8 +1019,10 @@ hr.rounded {
   color: black;
 }
 
+
 /* Style the back side */
 .flip-box-back {
+  margin-top: 5rem;
   background-color: transparent;
   color: white;
   transform: rotateY(180deg);
@@ -980,4 +1032,16 @@ h4 {
 }
 h3.descr {
   margin-bottom: 1rem;
+}
+
+.curved.back {
+  height: 2px !important;
+}
+div {
+  background:#50266f;
+}
+
+h1.click_go {
+  color: white;
+  font-size: 1rem;
 }

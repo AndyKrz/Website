@@ -11,10 +11,11 @@
 
     <body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-  <!-- check the Comments for more info -->
-<div class="container demo">
-   <div class="content">
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+      
+<div class="container demo" id="card">
+   <div class="content front">
       <div id="large-header" class="large-header">
         <nav id="sidenav">
         <div class="scrollmenu content">
@@ -23,22 +24,58 @@
           <a href="#contact">Contact</a>
         </div>
       </nav>
-        <div class="curved ">
+      <div class="curved2">
           <h1 class="first-text bounce-top"><a class="green">Hello.</a><br> I'm Andy.</h1>
+
           <!-- <svg viewBox="0 0 1440 1318"><path fill="rgb(81, 68, 141)" fill-opacity="1" d="M0,0L40,26.7C80,53,160,107,240,117.3C320,128,400,96,480,74.7C560,53,640,43,720,74.7C800,107,880,181,960,181.3C1040,181,1120,107,1200,64C1280,21,1360,11,1400,5.3L1440,0L1440,1320L1400,1320C1360,1320,1280,1320,1200,1320C1120,1320,1040,1320,960,1320C880,1320,800,1320,720,1320C640,1320,560,1320,480,1320C400,1320,1320,1320,240,1320C160,1320,80,1320,40,1320L0,1320Z"></path>
 
-            <image class="main-photo" x="875" y="-190" width="525" height="1050" xlink:href="Endrju.png"></image>
         </svg> -->
         <div class="wave-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 650" preserveAspectRatio="none">
-          <!-- <path fill="rgb(82,70,133)" fill-opacity="1" d="M0,288L80,240C160,192,320,96,480,80C640,64,800,128,960,176C1120,224,1280,256,1360,272L1440,288L1440,320L360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"> -->
-            <!-- <path fill="rgb(81, 68, 141)" fill-opacity="1" d="M-2.14,129.56 C151.35,135.49 272.12,-120.09 364.10,89.10 L378.78,151.28 L0.00,150.00 Z"> -->
-              M 0 320 Q 20 300 40 280 Q 240 60 440 280 Q 1640 500 800 500 L 0 500 L 0 320
-             <path fill="rgb(82,70,133)" fill-opacity="1" d="M 0 500 Q 25 500 100 425 Q 450 25 775 425 Q 1125 800 1500 800 L 0 800 L 0 500"></path>
-          <!-- </path> -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 650">
+             <path fill="#50266f" fill-opacity="1" d="M 0 500 Q 25 500 100 425 Q 450 25 775 425 Q 1125 800 1500 800 L 0 800 L 0 500">
+             </path>
+
+          <image class="main-photo" x="900" y="150" width="550" height="650" xlink:href="endrju_2.png">
+             </image>
+             
         </svg>
+
+        <div class="typing">
+          <div data-aos="fade-up" class="css-typing">
+            <p>
+              // Myself introduction
+            </p>
+            <p>
+             Name { 
+             </p>
+             <p>
+               First name: <a class="green">Andy</a>;
+              </p>
+              <p>
+                 Last name: <a class="green"> Flintstone</a>;
+              </p>
+              <p>
+             }
+            </p>
+          </div>
+          <div data-aos="fade-up" class="css-typing2">
+              <p> .What I Do { </p>
+                <p> Profession: <a class="green">Developer;</a></p>
+                <p>Markup: <a class="green">HTML</a>;</p>
+                <p> Expert: <a class="green">Java</a>;</p>
+                <p> }</p>
+                <h1 class="click_go">Click on the site to see more!</h1>
+
+
+          </div>
         </div>
-          <div class="typing">
+        </div>
+        </div>
+        </div>
+      </nav>
+     </div>
+               <!-- <div class="typing">
           <div data-aos="fade-right" class="css-typing">
             <p>
               // Myself introduction
@@ -64,12 +101,10 @@
                 <p> }</p>
 
           </div>
-          <img class="main-photo" x="875" y="-1900" width="550" height="700" src="endrju_2.png">
+          <img class="main-photo" x="875" y="-1900" width="550" height="700" src="endrju_2.png"> 
 
-        </div>
-        <div>
-          <hr class="rounded">
-        </div>
+        </div> -->
+
 
           <!-- <svg  viewBox="0 0 1440 319">
 
@@ -78,6 +113,7 @@
           
           </svg>         -->
           <!-- <div class="rest"> -->
+            <div class="curved back">
             <nav class="back2">
 
           <!-- <h2 class="second-text color glow text-focus-in">I work as a Java Developer</h2> -->
@@ -192,7 +228,7 @@
               <text x=40% y="200" fill="white" class="descr green shake-top">My Projects</text>
 
             </svg> -->
-            <nav class="back">
+            <nav class="back3">
               <div data-aos="fade-right" class="projects">
               <h3 class="descr">Kółko i krzyżyk</h3>
               <a href="https://github.com/AndyKrz/Andy" target="_blank">
@@ -228,11 +264,14 @@
               </div>
             </div>
       </div>
-      </div>
    </div>
-</div>
 </body>
-
+<script>
+$("#card").flip({
+  axis: 'x',
+  trigger: 'click'
+});
+</script>
 <script>
   window.onload = function() {
       var canvas = document.getElementById("myCanvas");
@@ -263,6 +302,15 @@
     } 
 }; 
   </script>
+  <script>
+  document.getElementById("cube-top").onscroll = function() {myFunction(
+    document.querySelector("cube-front").style.visibility= "hidden"
+  )};
+
+  // function myFunction() {
+  //   document.getElementById("cube-top");
+  // }
+  </script>
   
         <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
     </script>    
@@ -272,7 +320,5 @@
         <script>
           AOS.init();
         </script>
-      
-
 </html>
 
