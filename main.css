@@ -745,7 +745,7 @@ img#dog {
    will-change: transform;
 }
 img#dog:hover {
-  content: url(dog2.jpg);
+  content: url(img/dog2.jpg);
   /* filter: blur(.1px); */
 }
 img#tennis {
@@ -753,7 +753,7 @@ img#tennis {
   border-radius: 2.5rem;
 }
 #tennis:hover {
-content: url(Tennis.jpg);
+content: url(img/Tennis.jpg);
 }
 a.red {
   color:red;
