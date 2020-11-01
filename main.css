@@ -745,14 +745,15 @@ img#dog {
    will-change: transform;
 }
 img#dog:hover {
-  webkit-filter: blur(2px);
-  filter: blur(2px);
+  content: url(dog2.jpg);
+  /* filter: blur(.1px); */
 }
 img#tennis {
+
   border-radius: 2.5rem;
 }
 #tennis:hover {
-content: url(balls.jpg);
+content: url(Tennis.jpg);
 }
 a.red {
   color:red;
@@ -850,30 +851,6 @@ text.green {
     transform: translateY(0px);
     animation-timing-function: ease-out;
     opacity: 1;
-  }
-}
-.vibrate-1 {
-	animation: vibrate-1 0.3s linear infinite both;
-}
-
-@keyframes vibrate-1 {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
   }
 }
 .shake-top:hover {
