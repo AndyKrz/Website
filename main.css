@@ -133,15 +133,15 @@ div.flip-box {
    }
    div.css-typing {
     margin: auto;
-    margin-top: -80px;
+    margin-top: -10px;
     width: fit-content;
-    margin-left: -25px;
+    margin-left: 10px;
    }
    div.css-typing2 {
     margin: auto;
     width: fit-content;
-    margin-left: 8px;
-    margin-top: -60px;
+    margin-left: 0px;
+    margin-top: -1px;
   }
   div.projects{
     display: inline;
@@ -173,7 +173,7 @@ p.post.curved {
 }
 .first-text{
   top: 4rem !important;
-  left:8rem !important;
+  left:4rem !important;
   font-size: 1.7rem !important; 
 }
 .css-typing p { 
@@ -191,6 +191,21 @@ div.scrollmenu {
 h2.contact {
   font-size: 2rem !important;
 }
+h2.post.curved {
+  font-size: 2rem !important;
+}
+.flip-box {
+  margin: 0px 15px !important;
+  background-color: transparent !important;
+  width: 50px !important; 
+  height: 50px !important;
+  display: inline-block !important;
+}
+
+h2.techno {
+  margin-bottom: 20px !important;
+}
+
 img.main-photo {
   margin-left: 1rem;
   width: 150px;
