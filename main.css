@@ -255,7 +255,7 @@ div.scrollmenu {
    font-size: 1.5rem;
    word-spacing: 20%;
    display: inline-block;
-   color: grey;
+   color: white;
    text-align: center;
    padding: 10px 40px;
    text-decoration: none;
@@ -264,7 +264,7 @@ div.scrollmenu {
  }
  
  div.scrollmenu a:hover {
-   background-color: #04e8b9;
+   background-color: white;
  }
  nav.back3{
    background: #50266f;
@@ -286,8 +286,8 @@ div.scrollmenu {
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
    font-size: 6rem;
-   top: 10rem;
-   left: 28.5rem;
+   top: 7rem;
+   left: 16rem;
    position: absolute;
    opacity: 1;
    color: white;
@@ -317,7 +317,7 @@ box-shadow: 0 0 0 0 #ffffff;
 margin-right: 2rem;
 width: 230px;
 margin-block-end: auto;
-margin-top:-20rem;
+margin-top:-18rem;
 z-index: 1;
 position: relative;
 padding: 10px;
@@ -326,6 +326,7 @@ padding: 10px;
 .css-typing2 {
   background:#50266f;
   margin-block-end: auto;
+  width: 200px;
    margin-right: 5rem;
    margin-top: -17.5rem;
 z-index: 1;
@@ -536,7 +537,7 @@ padding: 10px;
    animation-fill-mode: forwards;
  }
  .css-typing2 h1 {
-  margin-left: 25rem;
+  margin-left: 14rem;
   width: 13em;
   opacity: 0;
   -webkit-animation: type4;
