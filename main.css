@@ -70,7 +70,7 @@ h1.main-title.work-as {
 
 @media only screen and (max-width: 768px) {
 h3 {
-    font-size: .5rem !important;
+    font-size: .75rem !important;
 }
 
 div.flip-box {
@@ -126,8 +126,8 @@ div.flip-box {
     display: inline;
   }
   h2.techno {
-    font-size: x-large !important;
-    }
+    font-size: 2rem !important;
+}
   img#kolko {
     margin: auto;
     width: 75px;
@@ -188,7 +188,7 @@ h2.techno {
   margin-left: 0rem !important;
 }
 h1.click_go {
-  font-size: 0.65rem !important;
+  font-size: 0.75rem !important;
 }
 
 img.main-photo {
@@ -197,7 +197,44 @@ img.main-photo {
   height: 200px;
   margin-top: -200px
 }
-
+/* Nowe metody */
+.wave-container > svg {
+  display: block;
+  height: 350px;
+}
+image.main-photo {
+  x: 305;
+  y: 305;
+  width: 400px;
+  height: 472px;
+}
+.first-text {
+  top: 8rem !important;
+  left: 2rem !important;
+  font-size: 2.2rem !important;
+}
+div.typing {
+  display: flex;
+  margin-top: -15px;
+  height: 240px;
+}
+div.css-typing2 {
+  margin: auto;
+  width: fit-content;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+div.scrollmenu {
+  height: 0px;
+}
+.large-header {
+  width: 102%;
+  margin-left: -8px;
+}
+.curved.back {
+  width: 102% !important;
+  margin-left: -8px;
+}
 }
 div.post {
    margin-top: 10px;
