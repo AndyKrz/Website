@@ -38,7 +38,7 @@ div.rest {
 .large-header {
    position: relative;
    width: 100%;
-   background: rgb(170, 147, 147);
+   background:#50266f;
    overflow: hidden;
 /*    background-size: cover; */
    background-position: center center;
@@ -251,12 +251,26 @@ img.main-photoo {
 }
 h2.enter {
   margin-top: -12px;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   color: #04e8b9;
   background: #50266f;
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+}
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+div.css-typing {
+    margin: auto;
+    margin-top: -20px;
+    width: fit-content;
+    margin-left: 35px;
+}
+div.css-typing2 {
+    margin: auto;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
 }
 h2.enter {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
