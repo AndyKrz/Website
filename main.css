@@ -112,9 +112,9 @@ div.flip-box {
    }
    div.css-typing {
     margin: auto;
-    margin-top: -20px;
+    margin-top: 0px;
     width: fit-content;
-    margin-left: 10px;
+    margin-left: 35px;
    }
    div.css-typing2 {
     margin: auto;
@@ -156,10 +156,12 @@ p.post.curved {
   font-size: 1.7rem !important; 
 }
 .css-typing p { 
-  font-size: 9px !important;
+  font-size: 12px !important;
+  margin-block-start: -0.5rem;
 }
 .css-typing2 p {
-font-size: 9px !important;
+font-size: 12px !important;
+margin-block-start: -0.5rem;
 }
 div.scrollmenu {
   font-size: .7rem;
@@ -185,7 +187,9 @@ h2.techno {
   margin-bottom: 20px !important;
 }
 .css-typing2 h1 {
-  margin-left: 0rem !important;
+  margin-left: -1rem !important;
+  margin-top: 2rem;
+
 }
 h1.click_go {
   font-size: 0.75rem !important;
@@ -199,42 +203,62 @@ img.main-photo {
 }
 /* Nowe metody */
 .wave-container > svg {
-  display: block;
-  height: 350px;
+  margin-top: -200px;
+  display: inline !important;
+  height: 261px;
+  margin-left: -90px;
+  /* height: 180px; */
+}
+.wave-container{
+  position: fixed;
 }
 image.main-photo {
   x: 305;
   y: 305;
-  width: 400px;
-  height: 472px;
+  width: 0px;
+  height: 0px;
 }
 .first-text {
-  top: 8rem !important;
+  top: 16.5rem !important;
   left: 2rem !important;
   font-size: 2.2rem !important;
 }
 div.typing {
   display: flex;
-  margin-top: -15px;
-  height: 240px;
+  margin-top: -37px;
+  height: 180px;
 }
 div.css-typing2 {
   margin: auto;
   width: fit-content;
   margin-left: 0px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 div.scrollmenu {
   height: 0px;
 }
-.large-header {
-  width: 102%;
-  margin-left: -8px;
+body {
+    margin: 0px !important;
 }
-.curved.back {
-  width: 102% !important;
-  margin-left: -8px;
+div.mobile {
+  background: white;
+  height: 410px !important;
 }
+img.main-photoo {
+  float: right;
+  margin-top: 5rem;
+}
+h2.enter {
+  margin-top: -12px;
+  margin-bottom: 0;
+  color: #04e8b9;
+  background: #50266f;
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+}
+div.mobile {
+  height: 0px;
 }
 div.post {
    margin-top: 10px;
