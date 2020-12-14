@@ -1,91 +1,97 @@
-.curved.back {
-  height: 2px !important;
-  transition: all 1s ease-out 0s !important;
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
 }
-.content.front {
-  transition: all 1s ease-out 0s !important;
-}
-.credit {
-  position: absolute;
-  bottom: 50px;
-  width: 100%;
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
   text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
-.credit a {
-  color: #FDB515;
-  font: 800 75% "Open Sans", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
+
+/* Rozdzielczość mobilna najmniejsza*/
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+  h2.newPage {
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;  
+    margin: 75px;
+    margin-bottom: -65px !important;
+    font-size: 1.1rem !important;
+}
+  .flip-box {
+    margin: 10px 10px !important;
+    background-color: transparent !important;
+    display: inline-block !important;
+}
+img#dog {
+  width: 300px !important;
+  height: 184px !important;
+}
+img#tennis {
+  width: 300px !important;
+  height: 172px !important;
+}
+img#web {
+  width: 300px !important;
+  height: 172px !important;
+  border-radius: 1rem !important;
+}
+img.firstIcon {
+  margin-left: 35px !important;
 }
 
-html {
-  scroll-behavior: smooth;
-  margin-right: -10px;
-  margin-top: -75px;
-}
 
-img.main-photo{
-  z-index: 1;
-  position: relative;
-    margin-top: -44rem;
 }
-div.rest {
-  background: rgb(81, 68, 141);
-  
-}
+/* Kolejne media na mobilne */
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+  div.css-typing {
+      margin: auto;
+      margin-top: 2px;
+      width: fit-content;
+      margin-left: 15px !important;
+  }
+  div.css-typing2 {
+      margin: auto;
+      width: 200px;
+      margin-left: 0px;
+      margin-top: 25px;
+  }
+  }
 
-.large-header {
-   position: relative;
-   width: 100%;
-   background:#996bc7;
-   overflow: hidden;
-/*    background-size: cover; */
-   background-position: center center;
-   z-index: 1;
-}
-.main-title {
-   position: absolute;
-   margin: 0;
-   padding: 0;
-   color: #F9F1E9;
-   text-align: center;
-   top: 10%;
-   left: 50%;
-   -webkit-transform: translate3d(-50%, -50%, 0);
-   transform: translate3d(-50%, -50%, 0);
-}
 
-.demo .main-title {
-   text-transform: uppercase;
-   font-size: 4.2em;
-   letter-spacing: 0.1em;
-}
-h1.main-title.work-as {
-   margin-top: 250px;
-}
-.main-title .thin {
-   font-weight: 200;
-}
-h2.goback {
-  height: 50px;
-  color: #04e8b9;
-  margin-top:40px;
-  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  animation: shake-top 2s infinite cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-  animation-delay: 3s;
-}
-h3.descr.end {
-  float: inherit;
-}
 
+
+/* Rozdzielczość na średnie ekrany do 768px*/
 @media only screen and (max-width: 768px) {
+
+  .social {
+    margin-top: -50px;
+}
 
   h3.rights {
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: .7rem !important;
+    height: 30px;
 }
 
   h3.descr.end {
@@ -123,7 +129,7 @@ h3.descr.end {
 
   .flip-box-back {
     /* visibility: visible !important; */
-    margin-top: 1.8rem !important;
+    margin-top: 4.8rem !important;
   }
   h3.descr {
     font-size: 1.4rem !important;
@@ -133,8 +139,8 @@ h3.descr.end {
     margin-top: 1rem !important;
 }
 h2.goback {
-  margin-top: -50px;
-  margin-bottom: 10px;
+  /* margin-top: -50px;
+  margin-bottom: 10px; */
 }
 
 h3 {
@@ -146,8 +152,8 @@ div.flip-box {
   max-height:100%;
 }
 .icon {
-  height: 110px;
-  width: 110px;
+  height: 90px;
+  width: 90px;
 }
   .scrollmenu.content a{
     font-size: 0.6rem;
@@ -223,6 +229,14 @@ div.flip-box {
     width: 75px;
     height: 120px;
 }
+img#gitHub {
+  margin-right: 40px;
+}
+img#web {
+  width: 400px;
+  height: 245px;
+  border-radius: 1rem !important;
+}
 img#dog {
    width: 400px;
     height: 245px;
@@ -264,18 +278,22 @@ h2.contact {
   font-size: 2rem !important;
 }
 h2.post.curved {
+  margin-bottom: 0px !important;
   width: fit-content;
   margin-left: 25px;
   margin-top: -5px !important;
   font-size: 2rem !important;
 }
 .flip-box {
-  margin: 20px 23px !important;
   background-color: transparent !important;
   display: inline-block !important;
 }
 nav.technoNames, nav.technoNames2 {
   float: left;
+  width: -webkit-fill-available;
+}
+nav.technoNames {
+  margin-left: 0px;
 }
 /* nav.technoNames2 {
   float: left;
@@ -345,8 +363,8 @@ img.main-photoo {
 }
 h2.enter {
   margin-top: -12px;
-  margin-bottom: 40px;
-  color: #04e8b9;
+  margin-bottom: 120px;
+  color: white;
   background: #996bc7;
   font-family: myriad-pro, sans-serif;
   font-style: normal;
@@ -362,19 +380,88 @@ nav.back2{
   height: 550px;
 }
 }
-@media only screen and (min-width: 300px) and (max-width: 640px) {
-div.css-typing {
-    margin: auto;
-    margin-top: 2px;
-    width: fit-content;
-    margin-left: 39px;
+/* Duże ekrany (monitor,tablet) */
+.curved.back {
+  height: 2px !important;
+  transition: all 1s ease-out 0s !important;
 }
-div.css-typing2 {
-    margin: auto;
-    width: 200px;
-    margin-left: -25px;
-    margin-top: 25px;
+.content.front {
+  transition: all 1s ease-out 0s !important;
 }
+.credit {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.credit a {
+  color: #FDB515;
+  font: 800 75% "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* margin-right: -10px; */
+  margin-top: -75px;
+}
+
+img.main-photo{
+  z-index: 1;
+  position: relative;
+    margin-top: -44rem;
+}
+div.rest {
+  background: rgb(81, 68, 141);
+  
+}
+
+.large-header {
+   position: relative;
+   width: 100%;
+   background:#996bc7;
+   overflow: hidden;
+/*    background-size: cover; */
+   background-position: center center;
+   z-index: 1;
+}
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 10%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+h1.main-title.work-as {
+   margin-top: 250px;
+}
+.main-title .thin {
+   font-weight: 200;
+}
+h2.goback {  
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;  
+  height: 30px;
+  color: #04e8b9;
+  margin-top:15px;
+  animation: shake-top 2s infinite cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation-delay: 3s;
+}
+h3.descr.end {
+  float: inherit;
 }
 
 h2.enter {
@@ -426,8 +513,9 @@ image.main-photo {
    position: relative;
 }
 h2.post.curved{
+  margin-bottom: -33px;
   color: #04e8b9;
-   margin-top: 50px;
+   /* margin-top: 50px; */
    font-size: 5rem;
    font-family: myriad-pro, sans-serif;
    font-style: normal;
@@ -743,17 +831,6 @@ padding: 10px;
    -webkit-animation-fill-mode: forwards;
    animation-fill-mode: forwards;
  }
- /* .css-typing2 h1 {
-  margin-left: 14rem;
-  width: 13em;
-  opacity: 0;
-  -webkit-animation: type4;
-  animation: type4;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-} */
  
  @keyframes type {
    0% {
@@ -863,7 +940,6 @@ padding: 10px;
 
 
 
-
  @keyframes blink {
    50% {
      border-color: transparent;
@@ -896,7 +972,7 @@ padding: 10px;
 .icon:hover {
    transform: scale(1.02,1.05);
 transition: all 0.25s ease-in-out;
-}
+} 
 
 
 h2.contact { 
@@ -1135,9 +1211,8 @@ hr.rounded {
 }
 
 
-
 .flip-box {
-  margin: 0px 40px;
+  margin: 20px 20px;
   background-color: transparent;
   width: 100px;
   height: 100px;

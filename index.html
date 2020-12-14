@@ -75,7 +75,8 @@
                 <p> }</p>
           </div>
         </div>
-        <h2 class="enter"><span></span></h2>
+        <!-- <button class="btn btn-primary" class ="toggle"> Click here</button> -->
+        <h2 class="enter" id="nextPage"><span></span></h2>
         </div>
         </div>
         </div>
@@ -86,6 +87,7 @@
           <nav class="middle">
             <section id="technologies" class="anchor">
             <div>
+              <h2 class="newPage" id="previousPage">see less.</h2>
               <h2 class="techno color">technologies.</h2>
             </div>   
          
@@ -205,8 +207,8 @@
             </a>
 
             </div> -->
-            <div class="projects" data-aos="fade-right"
-            data-aos-offset="150"
+            <div class="projects" data-aos="fade-down"
+            data-aos-offset="200"
             data-aos-easing="ease-in-sine">
               <h3 class="descr">DOG4YOU app / android / java.</h3>
               <a href="https://github.com/AndyKrz/Dog4u" target="_blank">
@@ -221,6 +223,14 @@
               <img id='tennis' width="1200" height="686" src="img/tennisball.jpg" alt="Tennis" >
               </a>
             </div>
+            <div class="projects" data-aos="fade-up"
+            data-aos-offset="150"
+            data-aos-easing="ease-in-sine">
+             <h3 class="descr">hello. i'm andy website / html, css, js.</h3>
+             <a href="https://andykrzemien.eu" target="_blank">
+             <img id='web' width="1200" height="686" src="img/www.png" alt="Web" >
+             </a>
+           </div>
             </nav>
             <div class="middle">
               <section id="contact" class="anchor">
@@ -234,8 +244,16 @@
                   tel: 506569744
                 </h3>
               </div>
-              <div>
-              <h2 class="goback">Go back</h2>
+              <div class="social">
+      
+                <a href="https://github.com/AndyKrz" target="_blank">
+                  <img id='gitHub' width="100" height="100" src="img/github_logo.png"  alt="github_logo" >
+                  </a> 
+                  <a href="https://www.linkedin.com/in/andrzej-krzemień-17344150/" target="_blank">
+                    <img id='linkedIn' width="100" height="100" src="img/linkedin_logo.png" alt="linkedin_logo" >
+                    </a> 
+
+              <h2 class="goback" onclick="topFunction()" id="myBtn" title="Go to top">go top.</h2>
 
               <h3 class="rights">© 2020 Andy Krzemień. All rights reserved.</h3>
             </div>
@@ -243,11 +261,52 @@
       </div>
    </div>
 </body>
-<script>
-$("#card").flip({
-  axis: 'x',
-  trigger: 'click'
+
+<!-- <script>
+  $( document ).ready(function() {
+   $("#card").flip({
+  trigger: 'manual'
 });
+   $('#toggle').click(function() {
+   $("#card").flip('toggle');
+});
+
+});
+</script> -->
+<script>
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script>
+jQuery("#card").flip({
+  axis:'x',
+  trigger: 'manual'
+});
+jQuery("#nextPage").click(function(){
+  jQuery("#card").flip(true);
+});
+jQuery("#previousPage").click(function(){
+  jQuery("#card").flip(false);
+});
+
+
 </script>
 <script>
   window.onload = function() {
@@ -284,10 +343,8 @@ $("#card").flip({
     document.querySelector("cube-front").style.visibility= "hidden"
   )};
   </script>
-  
         <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
     </script>    
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="js/tools.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
