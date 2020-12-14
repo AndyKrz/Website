@@ -1,41 +1,171 @@
-.btn-primary:hover {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+@media only screen and (min-width: 1024px) {
+
+    h2.techno {
+    margin: 0px !important;
+    width: 63%;
+    margin-bottom: 2rem !important;
+    }
+    h3.technoTitle {
+      width: 42%;
+  }
+  h3.technoTitle2 {
+    width: 46%;
+    margin-top: 2rem;
 }
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+nav.technoNames {
+  width: 90%;
+}
+nav.technoNames2 {
+  width: 61%;
+  margin-bottom: 2rem;
+    height: 200px;
+}
+h2.post.curved {
+  margin-top: -35px;
+  width: 62%;
+  height: 100px;
+}
+img#web {
+  width: 66%;
+  height: 66%
+}
+h3.descr {
+  width: 74%;
+}
+h2.contact {
+  width: 50%;
+}
+h3.descr.end {
+  text-align: start;
+  margin-left: 15.5rem;
+  font-size: 2rem;
 }
 
+h3.rights {
+  font-size: 1rem;
+  height: 50px;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width:960px) {
+  h2.techno {
+    margin: 0px !important;
+    width: 75%;
+    margin-bottom: 2rem !important;
+    font-size: 3rem !important;
+    }
+    h3.technoTitle {
+      width: 47%;
+      font-size: 2rem !important;
+      }
+  h3.technoTitle2 {
+    width: 52%;
+    margin-top: 2rem;
+}
+nav.technoNames {
+  width: 89%;
+    margin-left: 50px;
+}
+nav.technoNames2 {
+  width: 82%;
+  margin-bottom: 2rem;
+    height: 200px;
+}
+h2.post.curved {
+  font-size: 3rem !important;
+  margin-top: -35px;
+  width: 73%;
+  height: 100px;
+}
+img#web {
+  width: 66%;
+  height: 66%
+}
+h3.descr {
+  width: 78%;
+  font-size: 1.5rem
+}
+h2.contact {
+  width: 57%;
+  font-size: 3rem !important;
+}
+h3.descr.end {
+  text-align: start;
+  margin-left: 8.5rem;
+  font-size: 1.5rem;
+}
+img#gitHub {
+  margin-right: 25px;
+}
+h3.rights {
+  font-size: 1rem;
+  height: 50px;
+}
+  .wave-container > svg {
+    margin-top: -400px;
+    display: inline !important;
+    height: 414px;
+    margin-left: -90px;
+}
+img.main-photoo {
+  visibility: collapse;
+  float: right;
+  margin-top: 5.25rem;
+}
+.first-text {
+  top: 7rem !important;
+  left: 6.3rem !important;
+  font-size: 3rem !important;
+}
+img#web {
+  width: 66%;
+  height: 66%;
+}
+.css-typing p, .css-typing2 p{
+  font-size: 10px !important;
+}
+.css-typing{
+  margin-right: -5rem;
+  margin-top: -14rem;
+  width: 80px !important;
+    margin-block-end: auto;
+    margin-top: -14rem !important;
+}
+.css-typing2{
+  margin-right: 0rem;
+    margin-top: -13.5rem !important;
+    width: 0px !important;
+}
+h2.enter {
+  margin-top: -70px;
+    margin-left: 200px;
+    position: absolute !important;
+}
+img.startIcon {
+  z-index: 2;
+}
+img.firstIcon {
+  margin-left: 27rem !important;
+}
+img.secondIcon {
+  margin-left: 22rem !important;
+}
+div.scrollmenu {
+  height: 0px;
+}
+
+}
 
 /* Rozdzielczość mobilna najmniejsza*/
 @media only screen and (max-width: 420px) and (min-width: 320px) {
 
     .flip-box-front {
-      animation: flipFront 5s infinite;
+      animation: flipFront 10s infinite;
     }
 
     .flip-box-back {
       visibility: visible !important;
-      animation: flipBack 5s infinite;
+      animation: flipBack 10s infinite;
     }
 
   @keyframes flipFront {
@@ -93,16 +223,17 @@ img#web {
 img.firstIcon {
   margin-left: 35px !important;
 }
-
-
 }
 /* Kolejne media na mobilne */
 @media only screen and (min-width: 300px) and (max-width: 640px) {
+  html {
+    margin-top: -75px !important;
+  }
   div.css-typing {
       margin: auto;
       margin-top: 2px;
       width: fit-content;
-      margin-left: 15px !important;
+      margin-left: 10px !important;
   }
   div.css-typing2 {
       margin: auto;
@@ -110,10 +241,7 @@ img.firstIcon {
       margin-left: 0px;
       margin-top: 25px;
   }
-  }
-
-
-
+}
 
 /* Rozdzielczość na średnie ekrany do 768px*/
 @media only screen and (max-width: 768px) {
@@ -163,10 +291,6 @@ img.firstIcon {
     background: white;
   }
 
-  .flip-box-back {
-    /* visibility: visible !important; */
-    /* margin-top: 4.8rem !important; */
-  }
   h3.descr {
     font-size: 1.4rem !important;
     float: left;
@@ -269,9 +393,12 @@ img#gitHub {
   margin-right: 40px;
   margin-top: 20px;
 }
+/* img#gitHub:hover {
+transform: scale(1.2);
+} */
 img#web {
-  width: 400px;
-  height: 245px;
+  width: 66%;
+  height: 66%;
   border-radius: 1rem !important;
 }
 img#dog {
@@ -392,7 +519,7 @@ body {
 }
 div.mobile {
   background: white;
-  height: 450px !important;
+  height: 480px !important;
 }
 img.main-photoo {
   float: right;
@@ -438,11 +565,13 @@ nav.back2{
   text-transform: uppercase;
   text-decoration: none;
 }
-
+a {
+  color: #996bc7;
+}
 html {
   scroll-behavior: smooth;
   /* margin-right: -10px; */
-  margin-top: -75px;
+  margin-top: -18px;
 }
 
 img.main-photo{
@@ -520,7 +649,7 @@ h2.enter:hover span::after{
   content: 'click here.';
 }
 h2.newPage span::after {
-  content: '^';
+  content: '▲';
 }
 h2.newPage:hover span::after {
   content: 'click here.';
@@ -559,7 +688,7 @@ h2.post.curved{
   margin-bottom: -33px;
   color: #04e8b9;
    /* margin-top: 50px; */
-   font-size: 5rem;
+   font-size: 4rem;
    font-family: myriad-pro, sans-serif;
    font-style: normal;
    font-weight: 700;
@@ -1003,7 +1132,7 @@ padding: 10px;
    color: #04e8b9;
    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", 
    Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-size: 5rem;
+   font-size: 4rem;
    margin: 75px;
 }
 /* .icon {
@@ -1025,12 +1154,13 @@ h2.contact {
 font-family: myriad-pro, sans-serif;
       font-style: normal;
       font-weight: 700;
-      font-size: 5rem;
+      font-size: 4rem;
       color: #04e8b9;
-  font-size: 5rem;
   text-align: center;
 }
 img#dog {
+  width: 66%;
+  height: 66%;
   border-radius: 2.3rem;
   will-change: transform;
   transition-timing-function: ease;
@@ -1047,7 +1177,8 @@ img#dog:hover {
   filter: blur(.5px);
 }
 img#tennis {
-
+  height: 66%;
+  width: 66%;
   border-radius: 2.5rem;
 }
 #tennis:hover {
