@@ -28,6 +28,41 @@
 
 /* Rozdzielczość mobilna najmniejsza*/
 @media only screen and (max-width: 420px) and (min-width: 320px) {
+
+    .flip-box-front {
+      animation: flipFront 5s infinite;
+    }
+
+    .flip-box-back {
+      visibility: visible !important;
+      animation: flipBack 5s infinite;
+    }
+
+  @keyframes flipFront {
+    0%{
+      opacity: 1;
+
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;  
+    }
+  }
+  @keyframes flipBack {
+    0%{
+      opacity: 0;
+
+    }
+    50% {
+      opacity:1;  
+    }
+    100% {
+      opacity:0;  
+    }
+  }
+
   h2.newPage {
     font-family: myriad-pro, sans-serif;
     font-style: normal;
@@ -42,17 +77,18 @@
     display: inline-block !important;
 }
 img#dog {
-  width: 300px !important;
-  height: 184px !important;
+  width: 90% !important;
+  height: 90% !important;
 }
 img#tennis {
-  width: 300px !important;
-  height: 172px !important;
+  width: 90% !important;
+  height: 90% !important;
 }
 img#web {
-  width: 300px !important;
-  height: 172px !important;
+  width: 90% !important;
+  height: 90% !important;
   border-radius: 1rem !important;
+  margin-bottom: 25px;
 }
 img.firstIcon {
   margin-left: 35px !important;
@@ -129,7 +165,7 @@ img.firstIcon {
 
   .flip-box-back {
     /* visibility: visible !important; */
-    margin-top: 4.8rem !important;
+    /* margin-top: 4.8rem !important; */
   }
   h3.descr {
     font-size: 1.4rem !important;
@@ -231,6 +267,7 @@ div.flip-box {
 }
 img#gitHub {
   margin-right: 40px;
+  margin-top: 20px;
 }
 img#web {
   width: 400px;
@@ -363,7 +400,7 @@ img.main-photoo {
 }
 h2.enter {
   margin-top: -12px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   color: white;
   background: #996bc7;
   font-family: myriad-pro, sans-serif;
@@ -480,6 +517,12 @@ h2.enter span::after {
   content: 'see more.'
 }
 h2.enter:hover span::after{
+  content: 'click here.';
+}
+h2.newPage span::after {
+  content: '^';
+}
+h2.newPage:hover span::after {
   content: 'click here.';
 }
 
@@ -1232,12 +1275,13 @@ hr.rounded {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(360deg);
+  visibility: hidden;
+  /* transform: rotateY(270deg); */
 }
 .flip-box:hover .flip-box-back {
   color: white;
   background-color: transparent;
-   /* transform: rotateY(180deg); */
+   transform: rotateY(360deg);
   /* transition: transform 2s; */
   visibility: visible;
 }
@@ -1261,12 +1305,23 @@ hr.rounded {
 /* Style the back side */
 .flip-box-back {
   visibility: hidden;
-  margin-top: 5rem;
   background-color: transparent;
   color: white;
   /* transform: rotateY(90deg);
   transition: transform 2s; */
 
+}
+
+@keyframes wheel {
+  0% {
+
+  }
+  50% {
+
+  }
+  100%{
+
+  }
 }
 h4 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
