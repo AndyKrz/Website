@@ -41,13 +41,14 @@
       </div>
       </div>
       <div class="curved2">
-          <h1 class="first-text bounce-top"><a class="green">hello.</a><br>i'm Andy.</h1>
+          <h1 class="first-text bounce-top"><a class="green">   
+            hello.</a><br>i'm Andy.</h1>
         <div class="wave-container">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 650">
              <path fill="#996bc7" fill-opacity="1" d="M 0 500 Q 25 500 100 425 Q 450 25 775 425 Q 1125 800 1500 800 L 0 800 L 0 500">
              </path>
-          <image class="main-photo" x="900" y="150" width="550" height="650" xlink:href="img/endrju_2.png">
-             </image>
+              <image class="main-photo" x="900" y="150" width="550" height="650" xlink:href="img/endrju_2.png">
+              </image>
         </svg>
         <div class="typing">
           <div class="css-typing">
@@ -101,7 +102,7 @@
             <div class="flip-box-inner">
               <div class="flip-box-front">
           <image class="java-icon icon" x="100" y="0" width="110" height="110" src="img/java.png"></image>
-          </div>
+        </div>
           <div class="flip-box-back">
             <image class="java-icon icon" x="100" y="0" width="110" height="110" src="img/java_text.png"></image>
           </div>
@@ -202,17 +203,19 @@
             <div class="projects" data-aos="fade-up"
             data-aos-offset="175"
             data-aos-easing="ease-in-sine">
+            
               <h3 class="descr">DOG4YOU app / android / java.</h3>
               <a href="https://github.com/AndyKrz/Dog4u" target="_blank">
-              <img id='dog' width="1200" height="735" src="img/pjeski.jpg" data-aos="fade-right" alt="Dog4U" >
+              <img data-tilt data-tilt-perspective="1000" id='dog' width="1200" height="735" src="img/pjeski.jpg" data-aos="fade-right" alt="Dog4U" >
               </a>
+            
             </div>
              <div class="projects" data-aos="fade-right"
              data-aos-offset="150"
              data-aos-easing="ease-in-sine">
               <h3 class="descr">TennisBall app / android / java.</h3>
               <a href="https://github.com/AndyKrz/TennisBalls" target="_blank">
-              <img id='tennis' width="1200" height="686" src="img/tennisball.jpg" alt="Tennis" >
+              <img data-tilt data-tilt-perspective="1000" id='tennis' width="1200" height="686" src="img/tennisball.jpg" alt="Tennis" >
               </a>
             </div>
             <div class="projects" data-aos="fade-down"
@@ -220,7 +223,7 @@
             data-aos-easing="ease-in-sine">
              <h3 class="descr">hello. i'm andy. web / html / js.</h3>
              <a href="https://andykrzemien.eu" target="_blank">
-             <img id='web' width="1200" height="686" src="img/www.png" alt="Web" >
+             <img data-tilt data-tilt-perspective="1200" id='web' width="1200" height="686" src="img/www.png" alt="Web" >
              </a>
            </div>
             </nav>
@@ -252,7 +255,15 @@
             </div>
       </div>
    </div>
+   <script src="tilt.jquery.js"></script>
 </body>
+<script>
+$('.js-tilt').tilt({
+    perspective: 1500,
+    scale: 1.05,
+});
+</script>
+
 <script>
   //Get the button:
 mybutton = document.getElementById("myBtn");
